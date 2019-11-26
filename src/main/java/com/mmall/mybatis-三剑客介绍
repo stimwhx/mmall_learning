@@ -1,0 +1,5 @@
+mybatis-generator：生成pojo文件夹下就是和数据库表的一个简单类，这里的类的属性和数据库表中的字段对应
+dao文件里是生成的一个接品供我们server文件夹下的类调用
+还有自动生成对应的xml文件，这个xml是dao之个文件接口的实现，sql语句都写在xml里
+配置它，是在pom文件里加入引用
+mybatis-plugin:方便dao接口文件，和xml里跳转
