@@ -1,7 +1,7 @@
 Doc层是在最下边和DB交互的
 SerDoc层是在最下边和DB交互的
-   Server层，在doc层之上
-   Controler层，在server层之上
+   Server层，在doc层之上，impl是接口的实现
+   Controler层，在server层之上，portal是表示给前端用的
    Util层，工具类
    Vo层，可以理解为weiv object或都是value object做为一个值对象，传给controler进行展示。是pojo的上一层，是封装pojo层用的。然后返给controler.然后返回给前端进行展示
    Pojo层，是简单的一个数据库的一个对象
