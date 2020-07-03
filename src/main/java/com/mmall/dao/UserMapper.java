@@ -26,4 +26,9 @@ public interface UserMapper {
     String selectQuestion(String username);
     //查有没有这个问题的答案
     int chechAnswer(@Param("username")String username,@Param("question")String question,@Param("answer")String answer);
+    //重置密码的查询
+    int updatePasswordByUsername(@Param("username")String username,@Param("passwordNew")String passwordNew);
+    int checkPassword(@Param(value="password")String password,@Param("userId")Integer userId);
+    //更新用户信息
+    int checkEmailByUserId(@Param(value="email")String email,@Param(value="userId")Integer userId);
 }

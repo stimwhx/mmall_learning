@@ -17,6 +17,7 @@ public class ServerResponse<T> implements Serializable {
     //这里定义的三个方法，每一个响应都能用到，所以放在公共类里了
     private int status;
     private String msg;
+    public String token;
     private T data;
     //保证序列化json时如果values是null,那么key也会消失，像这个只返回一个状态 ，没有data和msg说明两个为null那么就没有必要返回
     private ServerResponse(int status){

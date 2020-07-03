@@ -10,6 +10,8 @@ import org.slf4j.LoggerFactory;
 import java.util.concurrent.TimeUnit;
 
 public class TokenCache {
+
+   public static final String TOKEN_PREFIX= "token_";
     //这个类是用来处理token的缓存的
     //先写一个log
     public static Logger logger = LoggerFactory.getLogger(TokenCache.class);
